@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221101002822">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <title>Calculator Xiaomi</title>
+</head>
+  <body class="_unlock">
+    <div class="wrapper">
+      
+      <main class="main">
+        <div class="calc">
+          <div class="calc__header header-calc">
+            <div class="header-calc__menu swiper">
+              <div class="header-calc__container swiper-wrapper">
+                <div class="header-calc__page header-calc__main swiper-slide first-slide unselectable">Калькулятор</div>
+                <div class="header-calc__page equation_tab swiper-slide unselectable">Квадратные уравнения</div>
+                <div class="header-calc__page swiper-slide unselectable">скоро...</div>
+              </div>
+            </div>
+          </div>
+          <div class="calc__body swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide calc-main">
+                <div class="calc__out">
+                  <input type="text" id="input" autocomplete="off">
+                </div>
+                <div class="calc__buttons buttons-calc">
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__actions buttons-calc__actions_AC">AC</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__actions buttons-calc__actions_DEL">
+                      <span>
+                        <span></span>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__sign">%</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__sign_del">÷</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">7</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">8</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">9</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__sign_multiply">
+                      *
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">4</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">5</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">6</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__sign_minus">-</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">1</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">2</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">3</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__sign_plus">
+                      +
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__actions buttons-calc__actions_ROTATE _icon-rotate">
+                      <img src="img/screen_rotation.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">0</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__number">,</button>
+                  </div>
+                  <div class="buttons-calc__tile">
+                    <button type="button"class="buttons-calc__button buttons-calc__actions buttons-calc__actions_FINISH">
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="equation swiper-slide">
+                <div class="equation__header">
+                  <div class="equation__title">Уравнение вида:</div>
+                  <div class="calc__out calc__out_equation"><span></span></div>
+                  <div class="equation__inputs-block inputs-block">
+                    <div class="inputs-block__one">
+                      <div class="inputs-block__title">Введите число a:</div>
+                      <input type="number" id="input_one" autocomplete="off">
+                    </div>
+                    <div class="inputs-block__two">
+                      <div class="inputs-block__title">Введите число b:</div>
+                      <input type="number" id="input_two" autocomplete="off">
+                    </div>
+                    <div class="inputs-block__three">
+                      <div class="inputs-block__title">Введите число c:</div>
+                      <input type="number" id="input_three" autocomplete="off">
+                    </div>
+                  </div>
+                </div>
+                <div class="equation__start">
+                  <button type="button">
+                    <img src="img/start.svg" alt="" class="unselectable">
+                  </button type="button">
+                </div>
+                <div class="equation__result result-equation">
+                  <div class="result-equation__title">Результат:</div>
+                  <div class="result-equation__contant">
+                    <div class="result-equation__item result-equation__d">D =</div>
+                    <div class="result-equation__item result-equation__x1">X<span>1</span>=</div>
+                    <div class="result-equation__item result-equation__x2">X<span>2</span>=</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide be-continued">Скоро...</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+    </div>
+    <script type="text/javascript" src="js/app.min.js?_v=20221101002822"></script>
+  </body>
+</html>
+
+

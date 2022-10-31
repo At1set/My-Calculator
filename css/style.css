@@ -1380,7 +1380,7 @@ main {
     border-radius: 0;
   }
 
-  .calc__out {
+  .calc__out.first {
     height: 400px;
   }
 }

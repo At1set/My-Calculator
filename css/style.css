@@ -1378,6 +1378,7 @@ main {
     margin: 0;
     border: none;
     border-radius: 0;
+    overflow: auto;
   }
 
   .calc__out.first {
